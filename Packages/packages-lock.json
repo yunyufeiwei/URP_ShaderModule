@@ -169,7 +169,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.yuxuetian.shaderreference": {
-      "version": "https://github.com/yunyufeiwei/CustomShaderReference.git",
+      "version": "https://github.com/yunyufeiwei/Plugin_ShaderReference.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},

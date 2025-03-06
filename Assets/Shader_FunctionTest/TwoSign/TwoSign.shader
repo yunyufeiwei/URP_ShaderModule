@@ -1,4 +1,4 @@
-Shader "ShaderReference/Template/UnlitOpaque"
+Shader "Art_URP/FunctionTest/TwoSign"
 {
     Properties
     {

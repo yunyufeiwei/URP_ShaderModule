@@ -51,6 +51,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: af9536d49febc4e4aa07615ee83abbe5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,7 +67,9 @@ Material:
         m_Texture: {fileID: 2800000, guid: ef2b41b065877824eb5b656b99541a2e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
+    m_Ints:
+    - _USETEXTURENOISE: 0
+    - _UseTextureNosie: 0
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5

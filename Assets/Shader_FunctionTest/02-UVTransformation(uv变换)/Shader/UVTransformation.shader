@@ -89,14 +89,14 @@ Shader "ArtShader/FunctionTest/Transformation"
                 // o.uv = mul(matrix_TranslateVector , uv).xy;
 
                 //旋转变换
-                // float timeAngle = _Time.y * _Angle;
-                //o.uv = Unity_Rotate_Radians_float(v.texcoord,_RotatorVector.zw , timeAngle); //Unity内置方法
-                // float2 uvCenter = v.texcoord - _RotatorVector.zw;
-                // o.uv = uvCenter;
-                // float2x2 rot_Matrix = float2x2(cos(timeAngle),-sin(timeAngle),
-                //                                sin(timeAngle),cos(timeAngle));
-                // o.uv = mul(rot_Matrix , o.uv);
-                // o.uv += _RotatorVector.zw;
+                 float timeAngle = _Time.y * _Angle;
+                o.uv = Unity_Rotate_Radians_float(v.texcoord,_RotatorVector.zw , timeAngle); //Unity内置方法
+                 float2 uvCenter = v.texcoord - _RotatorVector.zw;
+                 o.uv = uvCenter;
+                 float2x2 rot_Matrix = float2x2(cos(timeAngle),-sin(timeAngle),
+                                                sin(timeAngle),cos(timeAngle));
+                 o.uv = mul(rot_Matrix , o.uv);
+                 o.uv += _RotatorVector.zw;
 
                 //缩放变换
                 //相乘法：
@@ -105,11 +105,11 @@ Shader "ArtShader/FunctionTest/Transformation"
                 // o.uv += _ScaleVector.xy;    //复原缩放点
                 //矩阵法：
                 // _ScaleVector---xy表示缩放中心点，zw表示缩放的系数
-                 float2 scaleValue = abs(sin(_Time.y * _Speed)) * _ScaleVector.zw;
-                 float2 uvCenter = v.texcoord - _ScaleVector.xy;
-                 float2x2 scale_Matrix = float2x2(scaleValue.x , 0,
-                                                  0,scaleValue.y);
-                 o.uv = mul(scale_Matrix,uvCenter) + _ScaleVector.xy;
+                 // float2 scaleValue = abs(sin(_Time.y * _Speed)) * _ScaleVector.zw;
+                 // float2 uvCenter = v.texcoord - _ScaleVector.xy;
+                 // float2x2 scale_Matrix = float2x2(scaleValue.x , 0,
+                 //                                  0,scaleValue.y);
+                 // o.uv = mul(scale_Matrix,uvCenter) + _ScaleVector.xy;
                 
                 return o;
             }

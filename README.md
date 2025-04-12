@@ -1,6 +1,12 @@
 # Unity Shader测试工程提交日志记录
 ## 添加shader参考工具包
 
+###  shader基础知识与基础算法的复刻测试
+![基础知识](ShootImage/BaseContent.png)
+![分形与室内映射](ShootImage/BaseEffect.png)
+![卡通渲染基础](ShootImage/BaseToon.png)
+![基础光照模型](ShootImage/BaseLight.png)
+
 
 ### 矩阵变换（移动、旋转、缩放）的原理测试
 ![变换](ShootImage/VertexTransform.gif)

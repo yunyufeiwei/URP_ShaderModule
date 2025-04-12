@@ -1,14 +1,14 @@
-# Unity Shader测试工程提交日志记录
-## 添加shader参考工具包
+# Unity Shader测试工程的截图索引
 
-###  shader基础知识与基础算法的复刻测试
+##  shader基础知识与基础算法的复刻测试
 ![基础知识](ShootImage/BaseContent.png)
 ![分形与室内映射](ShootImage/BaseEffect.png)
 ![卡通渲染基础](ShootImage/BaseToon.png)
 ![基础光照模型](ShootImage/BaseLight.png)
 
 
-### 矩阵变换（移动、旋转、缩放）的原理测试
+## Shader功能测试与原理验证
+### 矩阵变换（移动、旋转、缩放）
 ![变换](ShootImage/VertexTransform.gif)
 *注意：  
 1.特别需要注意测试当物体不在世界坐标原点时的测试结果，因此在测试代码中，做了物体在世界坐标中移动后的相关对比测试  
@@ -19,6 +19,7 @@
 1.uv的旋转和顶点的旋转本质上是相同的内容，区别在于一个是在3D空间下进行，一个是2D空间下进行  
 2.对于纹理贴图的旋转通过在中心进行，而对于缩放默认应该是总UV坐标的原点开始（左下角和左上角）*
 
+### 顶点动画
 ![顶点波形动画](ShootImage/GerstnerWaves.gif)
 *注意：  
 Gerstner的波动方程，在尺寸较小的模型上需要特别注意参数的数值调整，同时，该波动方程需要模型的面数足够支撑平滑的顶点偏移效果*

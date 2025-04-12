@@ -32,7 +32,7 @@ MonoBehaviour:
     probeSamplingDebugTexture: {fileID: 2800000, guid: 24ec0e140fb444a44ab96ee80844e18e,
       type: 3}
   m_RendererFeatures:
-  - {fileID: 0}
+  - {fileID: 1247401318491868177}
   m_RendererFeatureMap: 11cc0fe1e3a84f11
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}

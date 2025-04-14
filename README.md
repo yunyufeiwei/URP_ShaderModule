@@ -24,23 +24,23 @@
 *Info：  
 Gerstner的波动方程，在尺寸较小的模型上需要特别注意参数的数值调整，同时，该波动方程需要模型的面数足够支撑平滑的顶点偏移效果*
 
-![翻书])(ShootImage/FlipBook.png)
-![翻书模拟])(ShootImage/FlipBook02.png)
+![翻书](ShootImage/FlipBook.png)  
+![翻书模拟](ShootImage/FlipBook02.png)  
 *Info:  
 对于翻书的正反面，这里使用的是双Pass来显示，可以使用vFace来显示。
 *
 
-![噪声动画])(ShootImage/NoiseAnimation.gif)
+![噪声动画])(ShootImage/NoiseAnimation.gif)  
 *Info：  
 在顶点阶段通过采样一张纹理贴图来作为噪声遮罩，特别需要注意在该阶段采样纹理所使用的函数。
 *
 
-![视差])(ShootImage/ParallaxMapping.png)
+![视差](ShootImage/ParallaxMapping.png)  
 
-![反射])(ShootImage/Mirror01.png)
-![镜子])(ShootImage/Mirror02.png)
+![反射](ShootImage/Mirror01.png)  
+![镜子](ShootImage/Mirror02.png)  
 
-![简单阴影])(ShootImage/ShadowSimple.png)
-![面片阴影])(ShootImage/ShadowPlanar.png)
+![简单阴影](ShootImage/ShadowSimple.png)  
+![面片阴影](ShootImage/ShadowPlanar.png)  
 
-![平面算法])(ShootImage/uv图形算法.png)
+![平面算法](ShootImage/uv图形算法.png)  

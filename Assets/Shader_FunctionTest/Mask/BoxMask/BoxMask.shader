@@ -15,7 +15,7 @@
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            
+
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Assets/ShaderLibs/Node.hlsl"
 
@@ -38,7 +38,7 @@
             Varyings vert(Attributes v)
             {
                 Varyings o = (Varyings)0;
-                o.pos = TransformObjectToHClip(v.vertex);
+                o.pos = TransformObjectToHClip(v.vertex.xyz);
                 o.positionWS = mul(unity_ObjectToWorld, v.vertex).xyz;
                 return o;
             }

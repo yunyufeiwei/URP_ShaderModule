@@ -18,6 +18,7 @@ Shader "Art_URP/FunctionTest/UnlitOpaque"
             #pragma fragment frag
             
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
 
             struct Attributes
             {

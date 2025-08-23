@@ -1,7 +1,7 @@
-using UnityEditor;
 using UnityEngine;
+using UnityEditor;
 
-public class CustomShaderGUI_02 : ShaderGUI
+public class CustomShaderGUI02 : ShaderGUI
 {
     MaterialEditor editor;
     MaterialProperty[] properties;

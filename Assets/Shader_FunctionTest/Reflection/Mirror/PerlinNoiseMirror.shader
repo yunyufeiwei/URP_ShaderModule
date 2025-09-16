@@ -138,11 +138,11 @@
             ZTest Always
             ZWrite Off
             Blend SrcAlpha OneMinusSrcAlpha
-            Stencil 
-            {
-                Ref 1
-                Comp Equal
-            }
+//            Stencil 
+//            {
+//                Ref 1
+//                Comp Equal
+//            }
             HLSLPROGRAM
             #pragma vertex vert_mirror
             #pragma fragment frag_mirror

@@ -20,13 +20,13 @@ Shader "Unlit/NewUnlitShader"
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
-            struct appdata
+            struct Attribute
             {
                 float4 positionOS : POSITION;
                 float2 texcoord : TEXCOORD0;
             };
 
-            struct v2f
+            struct Varying
             {
                 float2 uv : TEXCOORD0;
                 float4 positionHCS : SV_POSITION;
@@ -62,16 +62,16 @@ Shader "Unlit/NewUnlitShader"
                 return mask;
             }
 
-            v2f vert (appdata v)
+            Varying vert (Attribute v)
             {
-                v2f o;
-                o.positionHCS = TransformObjectToHClip(v.positionOS);
+                Varying o=(Varying)0;
+                o.positionHCS = TransformObjectToHClip(v.positionOS.xyz);
                 o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
                 //o.screenUV = ComputeScreenPos(o.positionHCS);
                 return o;
             }
 
-            half4 frag (v2f i) : SV_Target
+            half4 frag (Varying i) : SV_Target
             {
                 half4 FinalColor;
                 float2 screenUV = i.positionHCS.xy/_ScreenParams.xy;

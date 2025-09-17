@@ -29,11 +29,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Blur: 0.01
-    - _ButtomPosition: -0.3
-    - _LeftPosition: -0.2
-    - _RightPosition: 0.2
+    - _Blur: 0.0001
+    - _ButtomPosition: -0.001
+    - _LeftPosition: -0.5
+    - _RightPosition: 0.5
     - _Size: 0.4
-    - _TopPosition: 0.3
+    - _TopPosition: 0.001
     m_Colors: []
   m_BuildTextureStacks: []

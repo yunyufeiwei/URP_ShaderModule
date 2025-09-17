@@ -74,7 +74,11 @@ Shader "Unlit/NewUnlitShader"
                 screenUV -= 0.5;
                 screenUV.x *= _ScreenParams.x/_ScreenParams.y;
              
-                 float mask = Rect(screenUV,_LeftPosition,_RightPosition,_ButtomPosition,_TopPosition,_Blur);
+                float x = screenUV.x;
+                float offset = sin(_Time.y + x * 20) * 0.1;
+                float y = screenUV.y + offset;
+
+                float mask = Rect(float2(x,y),_LeftPosition,_RightPosition,_ButtomPosition,_TopPosition,_Blur);
 
                 FinalColor = half4(mask.xxx,1.0);
                 return FinalColor;

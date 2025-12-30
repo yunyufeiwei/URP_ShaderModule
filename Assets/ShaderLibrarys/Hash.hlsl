@@ -4,7 +4,7 @@
 #ifndef FMST_HASH
 #define FMST_HASH
 
-#include "Assets/ShaderLibs/Math.hlsl"
+#include "Assets/ShaderLibrarys/Math.hlsl"
 
 //https://www.shadertoy.com/view/4ssXRX   
 //https://www.shadertoy.com/view/4djSRW  

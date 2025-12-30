@@ -22,8 +22,8 @@
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
-            #include "Assets/ShaderLibs/Node.hlsl"
-            #include "Assets/ShaderLibs/Noise.hlsl"
+            #include "Assets/ShaderLibrarys/Node.hlsl"
+            #include "Assets/ShaderLibrarys/Noise.hlsl"
 
             struct Attributes
             {

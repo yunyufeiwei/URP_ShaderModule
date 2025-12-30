@@ -34,6 +34,7 @@ Shader "Art_URP/Base/Texture"
             //属性定义部分
             //定义纹理采样贴图和采样状态
             TEXTURE2D(_BaseMap);SAMPLER(sampler_BaseMap);
+            
             //CBuffer部分，数据参数定义在该结构内，可以使用srp的batch功能
             CBUFFER_START(UnityPerMaterial)
                 float4 _BaseMap_ST;

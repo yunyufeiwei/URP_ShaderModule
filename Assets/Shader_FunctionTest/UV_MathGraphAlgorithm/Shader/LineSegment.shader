@@ -19,7 +19,7 @@ Shader "Art_URP/FunctionTest/LineSegment"
             #pragma fragment frag
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-            #include "Assets/ShaderLibs/MF_DrawShape.hlsl"
+            #include "Assets/ShaderLibrarys/MF_DrawShape.hlsl"
 
             struct Attributes
             {

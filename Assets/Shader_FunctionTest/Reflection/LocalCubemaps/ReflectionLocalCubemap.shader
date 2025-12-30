@@ -22,7 +22,7 @@ Shader "Art_URP/FunctionTest/ReflectionLocalCubemap"
             
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
-            #include "Assets/ShaderLibs/Node.hlsl"
+            #include "Assets/ShaderLibrarys/Node.hlsl"
 
             struct a2v
             {

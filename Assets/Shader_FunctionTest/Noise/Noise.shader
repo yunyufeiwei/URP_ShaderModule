@@ -17,8 +17,8 @@
             #pragma fragment frag
             
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-            #include "Assets\ShaderLibs/Hash.hlsl"
-            #include "Assets\ShaderLibs/Noise.hlsl"
+            #include "Assets\ShaderLibrarys/Hash.hlsl"
+            #include "Assets\ShaderLibrarys/Noise.hlsl"
 
             struct Attributes
             {

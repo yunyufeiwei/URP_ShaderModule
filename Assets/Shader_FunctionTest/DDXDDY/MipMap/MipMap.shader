@@ -58,7 +58,7 @@ Shader "Art_URP/FunctionTest/UnlitOpaque"
                 #if _OPEN_MIPMAP_ON
                     half4 baseMap = SAMPLE_TEXTURE2D_GRAD(_MainTex,sampler_MainTex , i.uv , ddx(i.uv) , ddy(i.uv));
                 #else
-                    //默认情况下，会计算mipmap等级
+                    //默认情况下不会计算mipmap等级
                     // half4 baseMap = SAMPLE_TEXTURE2D(_MainTex,sampler_MainTex , i.uv);
                     half4 baseMap = SAMPLE_TEXTURE2D_LOD(_MainTex,sampler_MainTex , i.uv , _MipMapLevel);
                 #endif

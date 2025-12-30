@@ -1,15 +1,15 @@
-using Unity.VisualScripting;
+// using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 public class ZoomMousePos : MonoBehaviour
 {
-    public VolumeComponent volume;
+    public GameObject volume;
     public Vector2 pos;
 
     private void Start()
     {
-        volume = GetComponent<VolumeComponent>();
+        volume = GetComponent<GameObject>();
     }
 
     void Update()

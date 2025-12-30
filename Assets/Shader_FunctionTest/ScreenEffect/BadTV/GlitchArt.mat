@@ -29,10 +29,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _HorizontalShake: 0.02
+    - _HorizontalShake: 0.01
     m_Colors:
-    - _ColorDrift: {r: 0.12, g: 0, b: 0, a: 0}
-    - _ScanLineJitter: {r: 0.01, g: 0.29, b: 0, a: 0}
-    - _VerticalJump: {r: 1, g: 0, b: 0, a: 0}
+    - _ColorDrift: {r: 0.06, g: 0, b: 0, a: 0}
+    - _ScanLineJitter: {r: 0.2, g: 0.86, b: 0, a: 0}
+    - _VerticalJump: {r: 0.64, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1

@@ -19,7 +19,7 @@ Shader "Art_URP/Base/Texture"
             #pragma fragment frag
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-            
+            //
             struct Attributes
             {
                 float4 positionOS   : POSITION;

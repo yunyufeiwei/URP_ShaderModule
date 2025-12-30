@@ -29,8 +29,8 @@
             #pragma fragment frag
             
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-            #include "Assets/ShaderLibs/Node.hlsl"
-            #include "Assets/ShaderLibs/MF_ColorBlendMode.hlsl"
+            #include "Assets/ShaderLibrarys//Node.hlsl"
+            #include "Assets/ShaderLibrarys/MF_ColorBlendMode.hlsl"
 
             struct Attributes
             {

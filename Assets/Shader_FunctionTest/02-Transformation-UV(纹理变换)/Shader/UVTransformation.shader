@@ -100,7 +100,7 @@ Shader "ArtShader/FunctionTest/Transformation"
 
                 //缩放变换
                 //相乘法：
-                float2 time = sin(_Time.y) * _ScaleVector.zw;
+                float2 time = abs(sin(_Time.y)) * _ScaleVector.zw;
                 o.uv = (v.texcoord - _ScaleVector.xy) * _BaseMap_ST.xy * time + _BaseMap_ST.zw;  //v.texcoord - _ScaleVector.xy将缩放点偏移到中心
                 o.uv += _ScaleVector.xy;    //复原缩放点
                 //矩阵法：

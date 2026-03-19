@@ -83,6 +83,7 @@ Shader "Art_URP/Base/NPR/CelShading-RampSpecular"
                 half3 diffuseColor = baseMap.rgb * _Color;
 
                 half blinnPhong = pow(saturate(dot(worldNormalDir,halfDir)) , _SpecularPow);
+                return blinnPhong;
                 half2 SpecularUV = half2(blinnPhong,blinnPhong);
                 half4 specularRamp = SAMPLE_TEXTURE2D(_SpecularRamp,sampler_SpecularRamp,SpecularUV);
 

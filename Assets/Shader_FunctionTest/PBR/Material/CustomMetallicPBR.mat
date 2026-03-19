@@ -42,7 +42,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _Glossiness: 1
+    - _Glossiness: 0.899
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

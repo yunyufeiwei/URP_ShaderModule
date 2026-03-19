@@ -161,6 +161,8 @@ half4 ForwardPassFragment(Varyings input, FRONT_FACE_TYPE facing : FRONT_FACE_SE
 #endif
     half3 shadowColor = GetShadowColor(shadow, material, _IsDay);
 
+    return shadow;
+
     half3 specular = 0.0;
 #if _SPECULAR
     specular = GetSpecular(input, lightDirection, albedo, lightMap.rgb);

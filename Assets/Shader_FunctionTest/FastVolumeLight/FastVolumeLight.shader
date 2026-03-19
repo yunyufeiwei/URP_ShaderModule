@@ -2,6 +2,7 @@ Shader "Art_URP/FunctionTest/FastVolumeLight"
 {
     Properties
     {
+        _NoiseMap("NoiseMap",2D) = "white"{}
         [Tips()][KeywordEnum(Sphere, Box, Cylinder, Cone)] _TYPE ("Volume Type(尽量用Sphere和Box类型，性能好点)", Int) = 0
         [HDR]_Color ("Color Tint", Color) = (1, 1, 1, 1)
         _Radius ("Radius", Range(0, 1)) = 0.5
@@ -30,6 +31,7 @@ Shader "Art_URP/FunctionTest/FastVolumeLight"
             struct Attributes
             {
                 float4 positionOS : POSITION;
+                float2 texcoord     : TEXCOORD0;
             };
             
             struct Varyings
@@ -39,10 +41,10 @@ Shader "Art_URP/FunctionTest/FastVolumeLight"
                 float3 positionWS : TEXCOORD1;
                 float3 cameraOS : TEXCOORD2;
                 float3 cameraDir : TEXCOORD3;
+                float2 uv       : TEXCOORD4;
             };
             
-            
-
+            TEXTURE2D(_NoiseMap); SAMPLER(sampler_NoiseMap);
             TEXTURE2D(_CameraDepthTexture); SAMPLER(sampler_CameraDepthTexture);
             CBUFFER_START(UnityPerMaterial)
                 half4 _Color;
@@ -242,12 +244,15 @@ Shader "Art_URP/FunctionTest/FastVolumeLight"
                 o.positionWS = TransformObjectToWorld(v.positionOS.xyz);            //
                 o.cameraOS = mul(unity_WorldToObject, float4(_WorldSpaceCameraPos.xyz, 1)).xyz;
                 o.cameraDir = -normalize(UNITY_MATRIX_V[2].xyz);
+
+                o.uv = v.texcoord;
                 
                 return o;
             }
 
             half4 frag(Varyings i) : SV_Target
             {
+                
                 half2 screenUV = i.screenPos.xy / i.screenPos.w;
                 half3 cameraDir = normalize(i.cameraDir);
 
@@ -256,6 +261,7 @@ Shader "Art_URP/FunctionTest/FastVolumeLight"
                 // float3 viewDirOS = mul(unity_WorldToObject, float4(viewDirWS.xyz, 0));
                 float3 viewDirOS = mul(unity_WorldToObject, float4(viewDirWS.xyz, 0)).xyz;
 
+                float noiseMap = SAMPLE_TEXTURE2D(_NoiseMap, sampler_NoiseMap , screenUV).r;
                 float sceneDepth = SAMPLE_TEXTURE2D(_CameraDepthTexture, sampler_CameraDepthTexture , screenUV).r;
                 sceneDepth = LinearEyeDepth(sceneDepth,_ZBufferParams);
                 float sceneDistance = sceneDepth / dot(viewDirWS, cameraDir) ;
@@ -276,7 +282,7 @@ Shader "Art_URP/FunctionTest/FastVolumeLight"
                 #endif
 
                 half4 res = alpha * _Color;
-                res.rgb = max(res.rgb, 0);
+                res.rgb = max(res.rgb, 0) * noiseMap * 5;
                 res.a = saturate(res.a);
                 return res;
             }

@@ -91,7 +91,8 @@ Shader "Art_URP/FunctionTest/CustomSpecularPBR"
                 half viewScatter = 1 + (fd90 - 1) * pow(1 - NdotV, 5);
                 return baseColor * INV_PI * lightScatter * viewScatter;
             }
-            
+
+            //G项
             inline half CustomSmithJointGGXVisibilityTerm(half NdotL, half NdotV, half roughness)
             {
                 half a2 = roughness * roughness;
@@ -99,7 +100,8 @@ Shader "Art_URP/FunctionTest/CustomSpecularPBR"
                 half lambdaL = NdotV * (NdotL * (1 - a2) + a2);
                 return 0.5f / (lambdaV + lambdaL + 1e-5f);
             }
-            
+
+            //D项目
             inline half CustomGGXTerm(half NdotH, half roughness)
             {
                 half a2 = roughness * roughness;

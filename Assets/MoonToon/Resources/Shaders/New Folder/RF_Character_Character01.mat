@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RF_Character_Character01
+  m_Shader: {fileID: 4800000, guid: d8e339852f55b6f429ed1f7172c728c7, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _EnvCube:
+        m_Texture: {fileID: 8900000, guid: b816977c0e7f5dd4795e1efddfc4267e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 2800000, guid: a0770d8e53fdcaf42b22a5a3722a00a2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 0c851f64032910b4a98843c9c3691356, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexHair:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: e63dc4907131e9a4896c9b5c9f6c589d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NiuQu:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormTex:
+        m_Texture: {fileID: 2800000, guid: 944c96eefeeb39143878c53473c6afed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Animation1stX: 0.5
+    - _Animation1stY: 0.5
+    - _CastLight1: 1
+    - _CastLight2: 1
+    - _CastLight3: 1
+    - _CharacterAlpha: 1
+    - _ClothSpeStr1: 0
+    - _ClothSpeStr2: 0
+    - _ClothSpeStr3: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 0
+    - _EmissionSpeed: 0
+    - _FaceSide: 8.81
+    - _FaceStr: 0.6
+    - _FalloffLevel: 2
+    - _Force1stX: 0
+    - _Fresnel: 0
+    - _Glossiness: 0.5
+    - _GrayValue: 0
+    - _HairPrimaryShift: 0
+    - _HairSpeScal: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _Niuqu: 0
+    - _Saturation: 4.05
+    - _ShadowSelfColor: 1
+    - _SpeScal: 7
+    - _SpeStr: 9
+    - _SrcBlend: 1
+    - _TimeLightSpeed: 0.1
+    - _TimeLightStr: 1
+    - _TimeLightWidth: 0.8
+    - _UvSpeed2edX: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _CastColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _CastColor2: {r: 1, g: 1, b: 1, a: 1}
+    - _CastColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _ChaTintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorF: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 0.2}
+    - _FaceColor: {r: 1, g: 0, b: 0, a: 0.2}
+    - _FaceColor2: {r: 0.4716981, g: 0, b: 0, a: 0.2}
+    - _FaceColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _HairAO1st: {r: 1, g: 1, b: 1, a: 1}
+    - _HairAO2ed: {r: 1, g: 1, b: 1, a: 1}
+    - _HairColor1st: {r: 1, g: 1, b: 1, a: 1}
+    - _HairColor2ed: {r: 1, g: 1, b: 1, a: 1}
+    - _HairSpecular1st: {r: 1, g: 1, b: 1, a: 0.2}
+    - _HairSpecular2ed: {r: 1, g: 1, b: 1, a: 0.2}
+    - _TimeLightColor: {r: 0, g: 0, b: 0, a: 0}

@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: chibang004b
+  m_Shader: {fileID: 4800000, guid: 90e66d2f77262fe47b108fe164e86bea, type: 3}
+  m_ShaderKeywords: _DIFFUSEMASK_ON _DIFFUSEROTATE_ON _DISTORTION_ON _MASKROTATE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseMaskTex:
+        m_Texture: {fileID: 2800000, guid: f8aa4662717a8a5488b3fc4b8c1c134d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolutionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionTex:
+        m_Texture: {fileID: 2800000, guid: 563f539d346daa9438ef271b4810d633, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f1ce8036c55dccb459af0f5dfba98d31, type: 3}
+        m_Scale: {x: 1.5, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaValue: 1
+    - _BlendMode: 0
+    - _BumpScale: 1
+    - _ColorMask: 15
+    - _ColorSwitch: 0
+    - _Comp: 0
+    - _CompMode: 1
+    - _CullMode: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DiffuseAngle: 90
+    - _DiffuseMask: 1
+    - _DiffuseMaskLayerShown: 1
+    - _DiffuseRotate: 1
+    - _Dissolution: 0
+    - _DissolutionLayerShown: 1
+    - _DissolutionPopUp: 3
+    - _Dissolution_USpeed: 0
+    - _Dissolution_VSpeed: 0
+    - _Dissolvability: 0
+    - _Distortion: 1
+    - _DistortionIntensity: 0.3
+    - _DistortionLayerShown: 1
+    - _DistortionPopUp: 3
+    - _Distortion_USpeed: 0.1
+    - _Distortion_VSpeed: 0
+    - _DstBlend: 1
+    - _Eclosion: 1
+    - _EdgeWidth: 0
+    - _FaceMode: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _LerpValue: 1
+    - _MainTexPopUp: 0
+    - _MaskAngle: 270
+    - _MaskRotate: 1
+    - _MaskTexPopUp: 0
+    - _Mask_USpeed: 0
+    - _Mask_VSpeed: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _USpeed: 0
+    - _UVSec: 0
+    - _UseUIAlphaClip: 0
+    - _VSpeed: 0.4
+    - _WorldClip: 0
+    - _WorldClipRange: 1
+    - _ZTest: 4
+    - _ZTestMode: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 2.9960785, g: 2.854902, b: 1.6313726, a: 1}
+    - _DissolutionRGBA: {r: 0, g: 0, b: 0, a: 1}
+    - _DistortionRGBA: {r: 0, g: 0, b: 0, a: 1}
+    - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _LerpColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTexRGBA: {r: 1, g: 1, b: 1, a: 1}
+    - _MaskTexRGBA: {r: 0, g: 0, b: 0, a: 1}

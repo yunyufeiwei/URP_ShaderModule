@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: chibang_xx_001
+  m_Shader: {fileID: 4800000, guid: bede89b3360aa12418afddaaffbded1e, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _ClipMask:
+        m_Texture: {fileID: 2800000, guid: 1ee545399177c07418a26f8531f0b4a8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainNormal:
+        m_Texture: {fileID: 2800000, guid: 483eb54af8c0fc44f86ea63ab0368f40, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 4ece7c55477cf2644aa987ee69eb3434, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UV2Normals:
+        m_Texture: {fileID: 2800000, guid: 483eb54af8c0fc44f86ea63ab0368f40, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UV2Texture:
+        m_Texture: {fileID: 2800000, guid: 4ece7c55477cf2644aa987ee69eb3434, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UV3Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UV3Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.638
+    - _AlphaValue: 1
+    - _Animation1stX: 0.5
+    - _Animation1stY: 0.5
+    - _BlendMode: 0
+    - _BumpScale: 1
+    - _CastLight1: 1
+    - _CastLight2: 1
+    - _CastLight3: 1
+    - _CharacterAlpha: 1
+    - _ClothSpeStr1: 0
+    - _ClothSpeStr2: 0
+    - _ClothSpeStr3: 1
+    - _ColorSwitch: 0
+    - _Comp: 1
+    - _CompMode: 1
+    - _Cull: 1
+    - _CullMode: 0
+    - _Cutoff: 0
+    - _DetailNormalMapScale: 1
+    - _DiffuseAngle: 0
+    - _DiffuseMask: 0
+    - _DiffuseMaskLayerShown: 1
+    - _DiffuseRotate: 0
+    - _Dissolution: 0
+    - _DissolutionLayerShown: 1
+    - _DissolutionPopUp: 0
+    - _Dissolution_USpeed: 0
+    - _Dissolution_VSpeed: 0
+    - _Dissolvability: 0
+    - _Distortion: 0
+    - _DistortionIntensity: 1
+    - _DistortionLayerShown: 1
+    - _DistortionPopUp: 0
+    - _Distortion_USpeed: 0
+    - _Distortion_VSpeed: 0
+    - _DstBlend: 1
+    - _Eclosion: 1
+    - _EdgeWidth: 0
+    - _EmissionSpeed: 0
+    - _FaceMode: 1
+    - _FaceSide: 0.6
+    - _FaceStr: 0.6
+    - _FalloffLevel: 2
+    - _Force1stX: 0
+    - _Fresnel: 0
+    - _FresnelRange: 1
+    - _FresnelScale: 1
+    - _Gloss: 0.433
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GrayValue: 0
+    - _HairPrimaryShift: 0
+    - _HairSpeScal: 1
+    - _HuawenAlpha: 0.2
+    - _LerpValue: 1
+    - _MainTexPopUp: 0
+    - _MaskAngle: 0
+    - _MaskRotate: 0
+    - _MaskTexPopUp: 0
+    - _Mask_USpeed: 0
+    - _Mask_VSpeed: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _Niuqu: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Saturation: 0
+    - _ShadowSelfColor: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpeScal: 1
+    - _SpeStr: 1
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TimeLightSpeed: 0.1
+    - _TimeLightStr: 1
+    - _TimeLightWidth: 0.8
+    - _USpeed: 0
+    - _UV2Gloss: 0.502
+    - _UVSec: 0
+    - _UvSpeed2edX: 0
+    - _VSpeed: 0
+    - _WorldClip: 0
+    - _WorldClipRange: 5
+    - _ZTest: 4
+    - _ZTestMode: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _CastColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _CastColor2: {r: 1, g: 1, b: 1, a: 1}
+    - _CastColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _ChaTintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorF: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolutionRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _DistortionRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 0.2}
+    - _FaceColor2: {r: 1, g: 1, b: 1, a: 0.2}
+    - _FaceColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlossColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _HairAO1st: {r: 1, g: 1, b: 1, a: 1}
+    - _HairAO2ed: {r: 1, g: 1, b: 1, a: 1}
+    - _HairColor1st: {r: 1, g: 1, b: 1, a: 1}
+    - _HairColor2ed: {r: 1, g: 1, b: 1, a: 1}
+    - _HairSpecular1st: {r: 1, g: 1, b: 1, a: 0.2}
+    - _HairSpecular2ed: {r: 1, g: 1, b: 1, a: 0.2}
+    - _LerpColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTexRGBA: {r: 1, g: 1, b: 1, a: 1}
+    - _MaskTexRGBA: {r: 0, g: 0, b: 0, a: 1}
+    - _TimeLightColor: {r: 0, g: 0, b: 0, a: 0}
+    - _UV2Color: {r: 1, g: 1, b: 1, a: 1}
+    - _UV2GlossColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _UV3Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_BuildTextureStacks: []

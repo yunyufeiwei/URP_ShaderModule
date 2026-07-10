@@ -32,7 +32,7 @@ MonoBehaviour:
     m_Value: 1
   blurStrength:
     m_OverrideState: 1
-    m_Value: 0.304
+    m_Value: 0.606
   iterations:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 6
